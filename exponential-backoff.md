@@ -4,7 +4,7 @@ Exponential backoff is an easy to avoid [rate limit errors](https://docs.voyagea
 
 Exponential backoff means performing a short sleep when an error is hit, then retrying the unsuccessful request. If the request is still unsuccessful, the sleep length is increased and the process is repeated. This continues until the request is successful or until a maximum number of retries is reached.
 
-The following code snippet demonstrates how to implement exponential backoff (with a little bit of jitter) in Python using the [tenacity package](https://tenacity.readthedocs.io/en/latest/).  It assumes you've properly [installed the Voyage AI python package and have a configure API key](https://docs.voyageai.com/docs/api-key-and-installation).
+The following code snippet demonstrates how to implement exponential backoff (with a little bit of jitter) in Python using the [tenacity package](https://tenacity.readthedocs.io/en/latest/).  It assumes you've properly [installed the Voyage AI python package and have a configured API key](https://docs.voyageai.com/docs/api-key-and-installation).
 
 ```
 import voyageai
